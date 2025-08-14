@@ -1,0 +1,10 @@
+[
+	SquotTonelMapper {
+		#package : MCPackage {
+			#name : 'MCP-Server'
+		},
+		#path : FSAbsolutePath [
+			'src'
+		]
+	}
+]
