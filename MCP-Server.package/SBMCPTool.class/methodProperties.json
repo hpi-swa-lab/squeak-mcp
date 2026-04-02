@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"asToolDefinition" : "japu 3/24/2026 11:35",
+		"description" : "japu 3/24/2026 11:33",
+		"inputSchema" : "japu 3/24/2026 11:33",
+		"isAbstract" : "japu 3/24/2026 11:01",
+		"parameterNamed:type:description:" : "japu 3/24/2026 11:36",
+		"toolName" : "japu 3/24/2026 11:32" },
+	"instance" : {
+		"addSystemChangesTo:" : "MCPServer 3/28/2026 11:34",
+		"errorResult:" : "MCPServer 3/28/2026 11:33",
+		"execute:" : "jpau 3/28/2026 11:36",
+		"from:get:ifAbsent:" : "japu 3/24/2026 13:25",
+		"getAndClearSystemActivities" : "MCPServer 3/28/2026 11:41",
+		"prefixForActivityType:" : "MCPServer 3/28/2026 11:32",
+		"successResult:" : "MCPServer 3/28/2026 11:32" } }
