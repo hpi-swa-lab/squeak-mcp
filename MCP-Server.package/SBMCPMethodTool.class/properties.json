@@ -1,0 +1,14 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jpau 3/28/2026 10:16",
+	"instvars" : [
+		 ],
+	"name" : "SBMCPMethodTool",
+	"pools" : [
+		 ],
+	"super" : "SBMCPTool",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+A MCP server tool for managing classes - supports create, modify, rename, and delete operations.

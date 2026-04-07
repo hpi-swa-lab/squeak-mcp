@@ -1,0 +1,15 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"port",
+		"server" ],
+	"name" : "SBMCPServer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

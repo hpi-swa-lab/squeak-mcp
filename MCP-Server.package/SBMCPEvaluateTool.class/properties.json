@@ -1,0 +1,14 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SessionResults" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBMCPEvaluateTool",
+	"pools" : [
+		 ],
+	"super" : "SBMCPTool",
+	"type" : "normal" }
