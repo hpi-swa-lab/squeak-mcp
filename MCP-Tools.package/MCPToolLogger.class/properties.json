@@ -1,0 +1,16 @@
+{
+	"category" : "MCP-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Current" ],
+	"commentStamp" : "jpau 3/25/2026 08:11",
+	"instvars" : [
+		"entries",
+		"selectedIndex",
+		"isTracking" ],
+	"name" : "MCPToolLogger",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

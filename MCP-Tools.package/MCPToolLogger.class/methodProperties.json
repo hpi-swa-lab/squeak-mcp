@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"current" : "jpau 3/25/2026 08:12",
+		"open" : "jpau 3/25/2026 08:14",
+		"reset" : "jpau 3/25/2026 08:12" },
+	"instance" : {
+		"buildWith:" : "jpau 3/25/2026 09:31",
+		"clear" : "jpau 3/25/2026 08:19",
+		"detailText" : "jpau 3/25/2026 08:24",
+		"entries" : "jpau 3/25/2026 08:19",
+		"initialize" : "jpau 3/25/2026 09:26",
+		"isTracking" : "jpau 3/25/2026 09:27",
+		"logTool:arguments:result:" : "jpau 3/25/2026 09:29",
+		"selectedIndex" : "jpau 3/25/2026 08:20",
+		"selectedIndex:" : "jpau 3/25/2026 08:20",
+		"startTracking" : "jpau 3/25/2026 09:27",
+		"statsText" : "jpau 3/25/2026 09:43",
+		"stopTracking" : "jpau 3/25/2026 09:27",
+		"toggleTracking" : "jpau 3/25/2026 09:27",
+		"toolList" : "jpau 3/25/2026 08:21",
+		"trackingStatus" : "jpau 3/25/2026 09:28",
+		"writeArgumentsFor:on:" : "jpau 3/25/2026 08:32",
+		"writeHeaderFor:on:" : "jpau 3/25/2026 08:30",
+		"writeResultFor:orRaw:on:" : "jpau 3/25/2026 09:48" } }

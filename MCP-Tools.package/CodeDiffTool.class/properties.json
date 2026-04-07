@@ -1,0 +1,17 @@
+{
+	"category" : "MCP-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SharedInstance" ],
+	"commentStamp" : "jpau 3/25/2026 09:57",
+	"instvars" : [
+		"changes",
+		"selectedClassIndex",
+		"selectedMethodIndex",
+		"isTracking" ],
+	"name" : "CodeDiffTool",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

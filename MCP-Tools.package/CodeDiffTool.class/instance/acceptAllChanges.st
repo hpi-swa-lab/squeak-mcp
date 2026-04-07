@@ -1,0 +1,3 @@
+actions
+acceptAllChanges
+	self clear

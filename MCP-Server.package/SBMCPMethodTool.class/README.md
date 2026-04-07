@@ -1,1 +1,0 @@
-A MCP server tool for managing methods - supports add, modify, and delete operations.
