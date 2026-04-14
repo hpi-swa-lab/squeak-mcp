@@ -1,0 +1,18 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Current" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"log",
+		"maxEntries",
+		"isCapturing",
+		"knownDebuggers",
+		"steppingProcess" ],
+	"name" : "SystemActivityLogger",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
