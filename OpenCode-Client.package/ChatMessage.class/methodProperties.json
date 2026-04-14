@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"pendingAssistant" : "jpau 4/9/2026 13:32",
+		"user:" : "jpau 4/9/2026 13:32" },
+	"instance" : {
+		"appendContent:" : "jpau 4/9/2026 13:43",
+		"asFormattedText" : "jpau 4/9/2026 13:38",
+		"beDone" : "jpau 4/9/2026 13:44",
+		"beStreaming" : "jpau 4/9/2026 13:43",
+		"beThinking" : "jpau 4/9/2026 13:43",
+		"content" : "jpau 4/9/2026 13:33",
+		"content:" : "jpau 4/9/2026 13:34",
+		"formatAssistantMessage" : "jpau 4/9/2026 13:39",
+		"formatUserMessage" : "jpau 4/9/2026 13:39",
+		"isAssistant" : "jpau 4/9/2026 13:36",
+		"isStreaming" : "jpau 4/9/2026 13:37",
+		"isThinking" : "jpau 4/9/2026 13:37",
+		"isUser" : "jpau 4/9/2026 13:36",
+		"role" : "jpau 4/9/2026 13:33",
+		"role:" : "jpau 4/9/2026 13:33",
+		"status" : "jpau 4/9/2026 13:34",
+		"status:" : "jpau 4/9/2026 13:35" } }

@@ -1,0 +1,3 @@
+modifying
+beStreaming
+	status := #streaming

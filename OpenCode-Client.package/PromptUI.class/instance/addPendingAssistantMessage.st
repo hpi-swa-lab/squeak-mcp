@@ -1,0 +1,3 @@
+conversation management
+addPendingAssistantMessage
+	conversation add: ChatMessage pendingAssistant.

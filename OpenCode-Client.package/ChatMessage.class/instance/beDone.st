@@ -1,0 +1,3 @@
+modifying
+beDone
+	status := #done

@@ -1,0 +1,3 @@
+modifying
+beThinking
+	status := #thinking

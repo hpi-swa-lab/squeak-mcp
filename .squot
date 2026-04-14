@@ -1,4 +1,5 @@
 OrderedDictionary {
 	'MCP-Server.package' : #SquotCypressCodeSerializer,
-	'MCP-Tools.package' : #SquotCypressCodeSerializer
+	'MCP-Tools.package' : #SquotCypressCodeSerializer,
+	'OpenCode-Client.package' : #SquotCypressCodeSerializer
 }

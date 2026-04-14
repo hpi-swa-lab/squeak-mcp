@@ -1,0 +1,17 @@
+{
+	"category" : "OpenCode-Client",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DefaultServerUrl" ],
+	"commentStamp" : "jpau 4/9/2026 12:30",
+	"instvars" : [
+		"serverUrl",
+		"sessionId",
+		"eventProcess",
+		"onMessagePartReceived" ],
+	"name" : "OpenCodeClient",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

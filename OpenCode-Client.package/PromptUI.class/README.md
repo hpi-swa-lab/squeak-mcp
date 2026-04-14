@@ -1,0 +1,1 @@
+Simple chat UI for OpenCode AI interaction.

@@ -1,0 +1,3 @@
+testing
+isStreaming
+	^ status = #streaming

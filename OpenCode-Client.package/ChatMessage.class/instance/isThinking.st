@@ -1,0 +1,3 @@
+testing
+isThinking
+	^ status = #thinking

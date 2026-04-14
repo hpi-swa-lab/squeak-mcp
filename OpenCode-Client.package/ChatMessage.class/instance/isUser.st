@@ -1,0 +1,3 @@
+testing
+isUser
+	^ role = #user

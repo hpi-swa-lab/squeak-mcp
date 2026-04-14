@@ -7,6 +7,7 @@
 	"instance" : {
 		"checkForNewDebuggers" : "jpau 3/24/2026 15:57",
 		"clear" : "jpau 3/24/2026 15:35",
+		"consumeActivitiesForPrompt" : "MCPServer 4/14/2026 14:51",
 		"createEntryFrom:" : "jpau 3/24/2026 15:37",
 		"currentDebuggerWindows" : "jpau 3/24/2026 15:57",
 		"descriptionForMouseEventAt:" : "jpau 3/24/2026 15:54",

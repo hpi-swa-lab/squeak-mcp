@@ -1,11 +1,12 @@
-system-activities
-getAndClearSystemActivities
-	"Get formatted system activities and clear the log, wrapped in system-reminder tags"
-	| logger entries formatted |
-	logger := Smalltalk at: #SystemActivityLogger ifAbsent: [^ nil].
-	entries := logger entries reversed.
-	entries isEmpty ifTrue: [^ nil].
-	logger clear.
+prompt integration
+consumeActivitiesForPrompt
+	"Return formatted activities and clear them. Returns empty string if no activities.
+	Uses the same format as SBMCPTool>>getAndClearSystemActivities for consistency."
+	| entries formatted |
+	entries := log reversed.
+	entries isEmpty ifTrue: [^ ''].
+	log removeAll.
+	
 	formatted := String streamContents: [:stream |
 		entries doWithIndex: [:entry :index |
 			| type |
@@ -15,7 +16,7 @@ getAndClearSystemActivities
 				nextPutAll: '. ';
 				nextPutAll: (entry at: #timestamp) asTime print24;
 				nextPutAll: ' ';
-				nextPutAll: (self prefixForActivityType: type);
+				nextPutAll: (SBMCPTool new prefixForActivityType: type);
 				nextPutAll: (entry at: #details) asString;
 				nextPut: Character lf]].
 	^ '<system-reminder>

@@ -1,0 +1,18 @@
+{
+	"category" : "OpenCode-Client",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jpau 4/9/2026 13:10",
+	"instvars" : [
+		"client",
+		"conversation",
+		"inputText",
+		"cachedDisplayText",
+		"builder" ],
+	"name" : "PromptUI",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
