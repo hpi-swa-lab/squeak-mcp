@@ -1,6 +1,7 @@
 mcp-protocol
 handleInitialize: request id: id
 	| result |
+	MCPLogger default log: '.. initialize id=', id printString.
 	result := Dictionary new
 		at: 'protocolVersion' put: '2024-11-05';
 		at: 'serverInfo' put: (Dictionary new
@@ -11,4 +12,6 @@ handleInitialize: request id: id
 			at: 'tools' put: Dictionary new;
 			yourself);
 		yourself.
-	^ self sendResult: request result: result id: id
+	self sendResult: request result: result id: id.
+	MCPLogger default log: '== initialize response sent'.
+	^ result

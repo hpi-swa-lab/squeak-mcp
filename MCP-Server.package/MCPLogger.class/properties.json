@@ -3,12 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Current" ],
-	"commentStamp" : "",
+		"Default" ],
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"port",
-		"server" ],
-	"name" : "SBMCPServer",
+		"logFileName" ],
+	"name" : "MCPLogger",
 	"pools" : [
 		 ],
 	"super" : "Object",
