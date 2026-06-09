@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Current" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"port",
