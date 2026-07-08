@@ -1,0 +1,27 @@
+GSMetadata {
+	#version : 1,
+	#mappers : [
+		GSCypressMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'MCP-Server'
+			},
+			#path : FSAbsolutePath [ ]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'MCP-Tools'
+			},
+			#path : FSAbsolutePath [ ]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'OpenCode-Client'
+			},
+			#path : FSAbsolutePath [ ]
+		}
+	],
+	#name : 'squeak-mcp'
+}
