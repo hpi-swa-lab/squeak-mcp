@@ -1,11 +1,11 @@
 {
 	"class" : {
 		"description" : "jpau 3/28/2026 10:18",
-		"inputSchema" : "jpau 3/28/2026 10:20",
+		"inputSchema" : "jpau 7/15/2026 10:49",
 		"toolName" : "jpau 3/28/2026 10:33" },
 	"instance" : {
 		"addMethod:class:className:" : "jpau 3/28/2026 11:15",
 		"classFor:" : "jpau 3/28/2026 10:23",
 		"deleteMethod:className:methodName:" : "jpau 3/28/2026 11:16",
 		"execute:" : "jpau 3/28/2026 10:21",
-		"modifyMethod:class:className:methodName:" : "jpau 3/28/2026 11:15" } }
+		"modifyMethod:class:className:methodName:" : "jpau 7/15/2026 10:48" } }
