@@ -6,4 +6,4 @@ logMouseDown: anEvent
 
 	(lastEntry notNil and: [(lastEntry at: #details) = description])
 		ifTrue: [lastEntry at: #timestamp put: DateAndTime now]
-		ifFalse: [self log: {#type -> #mouseDown. #details -> description} asDictionary]
+		ifFalse: [self log: (Dictionary newFrom: {#type -> #mouseDown. #details -> description})]
