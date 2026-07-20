@@ -5,8 +5,14 @@
 		"toolName" : "jpau 7/15/2026 10:48" },
 	"instance" : {
 		"categoriesForExport" : "jpau 7/15/2026 10:46",
-		"execute:" : "jpau 7/15/2026 10:46",
+		"execute:" : "jpau 7/20/2026 11:38",
 		"exportCategories:toDirectory:" : "jpau 7/15/2026 10:47",
 		"exportCategory:toDirectory:" : "jpau 7/15/2026 10:47",
+		"hasOSProcess" : "jpau 7/20/2026 11:38",
+		"isWSL" : "jpau 7/20/2026 11:39",
+		"isWindows" : "jpau 7/20/2026 11:39",
+		"makeReadOnly:" : "jpau 7/20/2026 11:40",
+		"makeWritable:" : "jpau 7/20/2026 11:41",
 		"sourceForCategory:classes:" : "jpau 7/15/2026 10:47",
+		"toWindowsPath:" : "jpau 7/20/2026 11:39",
 		"writeContent:toFile:" : "jpau 7/15/2026 10:47" } }

@@ -9,6 +9,8 @@ modifyMethod: arguments class: theClass className: className methodName: methodN
 
 	oldString isEmpty ifTrue: [^ self errorResult: 'old_string parameter is required for modify'].
 	newString ifNil: [^ self errorResult: 'new_string parameter is required for modify'].
+	oldString := oldString copyReplaceAll: Character lf asString with: Character cr asString.
+	newString := newString copyReplaceAll: Character lf asString with: Character cr asString.
 	
 	(theClass includesSelector: methodName asSymbol) ifFalse: [
 		^ self errorResult: 'Method ', methodName, ' not found in ', className, '. Use add action to create it.'].
