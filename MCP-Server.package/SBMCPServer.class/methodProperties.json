@@ -1,12 +1,12 @@
 {
 	"class" : {
 		"availableTools" : "japu 3/24/2026 11:00",
-		"current" : " 7/20/2026 14:47:43",
-		"current:" : " 7/20/2026 14:47:43",
+		"current" : " 7/20/2026 15:41:32",
+		"current:" : " 7/20/2026 15:41:32",
 		"defaultPort" : "japu 3/24/2026 11:41",
 		"on:" : "japu 3/24/2026 11:40",
-		"shared" : " 7/20/2026 14:47:43",
-		"toggle" : " 7/20/2026 14:47:43" },
+		"shared" : " 7/20/2026 15:41:32",
+		"toggle" : " 7/20/2026 15:41:32" },
 	"instance" : {
 		"handleInitialize:id:" : "japu 3/24/2026 09:54",
 		"handleOptions:" : "japu 3/24/2026 11:56",
@@ -15,7 +15,7 @@
 		"handleToolsCall:params:id:" : "jpau 3/25/2026 09:37",
 		"handleToolsList:id:" : "japu 3/24/2026 09:55",
 		"initialize" : "japu 3/24/2026 11:42",
-		"isRunning" : " 7/20/2026 14:47:43",
+		"isRunning" : " 7/20/2026 15:41:32",
 		"new" : "japu 3/24/2026 10:24",
 		"port" : "japu 3/24/2026 09:44",
 		"port:" : "japu 3/24/2026 09:45",
