@@ -1,6 +1,7 @@
 server-control
 stop
 	server ifNotNil: [
-		server stopListener.
+		server destroy.
 		server := nil.
+		SystemActivityLogger current stopCapturing.
 		Transcript show: 'MCP Server stopped'; cr]

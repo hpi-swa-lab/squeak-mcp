@@ -1,12 +1,12 @@
 {
 	"class" : {
 		"availableTools" : "japu 3/24/2026 11:00",
-		"current" : " 7/20/2026 15:44:06",
-		"current:" : " 7/20/2026 15:44:06",
+		"current" : "7/20/2026 15:44:06",
+		"current:" : "7/20/2026 15:44:06",
 		"defaultPort" : "japu 3/24/2026 11:41",
 		"on:" : "japu 3/24/2026 11:40",
-		"shared" : " 7/20/2026 15:44:06",
-		"toggle" : " 7/20/2026 15:44:06" },
+		"shared" : "7/20/2026 15:44:06",
+		"toggle" : "7/20/2026 15:44:06" },
 	"instance" : {
 		"handleInitialize:id:" : "japu 3/24/2026 09:54",
 		"handleOptions:" : "japu 3/24/2026 11:56",
@@ -15,7 +15,7 @@
 		"handleToolsCall:params:id:" : "jpau 3/25/2026 09:37",
 		"handleToolsList:id:" : "japu 3/24/2026 09:55",
 		"initialize" : "japu 3/24/2026 11:42",
-		"isRunning" : " 7/20/2026 15:44:06",
+		"isRunning" : "7/20/2026 15:44:06",
 		"new" : "japu 3/24/2026 10:24",
 		"port" : "japu 3/24/2026 09:44",
 		"port:" : "japu 3/24/2026 09:45",
@@ -24,7 +24,7 @@
 		"sendError:code:message:id:" : "japu 3/24/2026 10:04",
 		"sendJson:content:" : "japu 3/24/2026 10:06",
 		"sendResult:result:id:" : "japu 3/24/2026 10:00",
-		"sendToolResult:result:id:" : "japu 3/24/2026 10:03",
-		"start" : "japu 3/24/2026 10:41",
-		"stop" : "japu 3/24/2026 09:47",
+		"sendToolResult:result:id:" : "jpau 7/15/2026 10:41",
+		"start" : "jpau 7/15/2026 10:40",
+		"stop" : "jpau 7/15/2026 10:41",
 		"validateAcceptHeader:" : "japu 3/24/2026 10:10" } }

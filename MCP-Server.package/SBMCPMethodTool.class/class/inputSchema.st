@@ -17,13 +17,26 @@ inputSchema
 			yourself);
 		at: 'source' put: (Dictionary new
 			at: 'type' put: 'string';
-			at: 'description' put: 'Complete method source code (required for add/modify)';
+			at: 'description' put: 'Complete method source code (required for add)';	
+			yourself);
+		at: 'old_string' put: (Dictionary new
+			at: 'type' put: 'string';
+			at: 'description' put: 'String to find and replace (required for modify)';
+			yourself);
+		at: 'new_string' put: (Dictionary new
+			at: 'type' put: 'string';
+			at: 'description' put: 'Replacement string (required for modify)';
+			yourself);
+		at: 'replace_all' put: (Dictionary new
+			at: 'type' put: 'boolean';
+			at: 'description' put: 'Replace all occurrences (default: false, errors if multiple matches)';
 			yourself);
 		at: 'category' put: (Dictionary new
 			at: 'type' put: 'string';
 			at: 'description' put: 'Method category (default: as yet unclassified)';
 			yourself);
 		yourself.
+
 	^ Dictionary new
 		at: 'type' put: 'object';
 		at: 'properties' put: properties;

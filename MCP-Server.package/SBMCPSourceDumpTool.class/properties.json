@@ -1,0 +1,14 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBMCPSourceDumpTool",
+	"pools" : [
+		 ],
+	"super" : "SBMCPTool",
+	"type" : "normal" }
