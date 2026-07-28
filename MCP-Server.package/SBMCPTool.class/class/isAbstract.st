@@ -1,4 +1,4 @@
 testing
 isAbstract
 
-        ^ self == MCPTool
+        ^ self == SBMCPTool
