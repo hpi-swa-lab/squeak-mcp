@@ -1,6 +1,6 @@
 private
 modifyClass: arguments name: name
-	| theClass superclassName instVars classVars poolDicts category comment superclass 	oldAuthor newSuperclass newInstVars newClassVars newPoolDicts newCategory modified |
+	| theClass superclassName instVars classVars poolDicts category comment superclass newSuperclass newInstVars newClassVars newPoolDicts newCategory modified |
 
 	theClass := Smalltalk classNamed: name.
 	theClass ifNil: [^ self errorResult: 'Class ', name, ' not found'].
@@ -13,9 +13,7 @@ modifyClass: arguments name: name
 	comment := self from: arguments get: 'comment' ifAbsent: nil.
 
 	modified := OrderedCollection new.
-	oldAuthor := Utilities authorInitials.
-	[
-		Utilities authorInitials: 'MCPServer'.
+	self withMCPAuthorInitials: [
 		newSuperclass := superclassName
 			ifNil: [theClass superclass]
 			ifNotNil: [
@@ -45,8 +43,7 @@ modifyClass: arguments name: name
 
 		comment ifNotNil: [
 			theClass classComment: comment.
-			modified add: 'comment'].
-	] ensure: [Utilities authorInitials: oldAuthor].
+			modified add: 'comment']].
 
 	modified isEmpty ifTrue: [
 		^ self errorResult: 'No modifications specified'].

@@ -4,6 +4,7 @@
 		"description" : "japu 3/24/2026 11:33",
 		"inputSchema" : "japu 3/24/2026 11:33",
 		"isAbstract" : "japu 3/24/2026 11:01",
+		"mcpAuthorInitials" : "MCPServer (leo) 10/14/2026 11:38",
 		"parameterNamed:type:description:" : "japu 3/24/2026 11:36",
 		"toolName" : "japu 3/24/2026 11:32" },
 	"instance" : {
@@ -13,4 +14,5 @@
 		"from:get:ifAbsent:" : "japu 3/24/2026 13:25",
 		"getAndClearSystemActivities" : "MCPServer 4/14/2026 14:50",
 		"prefixForActivityType:" : "MCPServer 3/28/2026 11:32",
-		"successResult:" : "MCPServer 3/28/2026 11:32" } }
+		"successResult:" : "MCPServer 3/28/2026 11:32",
+		"withMCPAuthorInitials:" : "MCPServer (leo) 10/14/2026 11:38" } }

@@ -1,6 +1,6 @@
 private
 addMethod: arguments class: theClass className: className
-	| source category oldAuthor error methodSelector |
+	| source category error methodSelector |
 	source := self from: arguments get: 'source' ifAbsent: ''.
 	category := self from: arguments get: 'category' ifAbsent: 'as yet unclassified'.
 
@@ -10,14 +10,10 @@ addMethod: arguments class: theClass className: className
 	(theClass includesSelector: methodSelector) ifTrue: [
 		^ self errorResult: 'Method ', methodSelector, ' already exists in ', className, '. Use modify action to change it.'].
 
-	oldAuthor := Utilities authorInitials.
 	error := nil.
-	[
-		Utilities authorInitials: 'MCPServer'.
+	self withMCPAuthorInitials: [
 		[theClass compile: source withSqueakLineEndings classified: category]
-			on: Error do: [:ex | error := ex messageText]
-	] ensure: [Utilities authorInitials: oldAuthor].
-
+			on: Error do: [:ex | error := ex messageText]].
 
 	error ifNotNil: [^ self errorResult: error].
 	

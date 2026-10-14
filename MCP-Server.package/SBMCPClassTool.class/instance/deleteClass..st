@@ -1,14 +1,10 @@
 private
 deleteClass: name
-	| theClass oldAuthor |
+	| theClass |
 	theClass := Smalltalk classNamed: name.
 	theClass ifNil: [^ self errorResult: 'Class ', name, ' not found'].
 
-	oldAuthor := Utilities authorInitials.
-	[
-		Utilities authorInitials: 'MCPServer'.
-		theClass removeFromSystem.
-	] ensure: [Utilities authorInitials: oldAuthor].
+	self withMCPAuthorInitials: [theClass removeFromSystem].
 
 	^ self successResult: (Dictionary new
 			at: 'action' put: 'deleted';

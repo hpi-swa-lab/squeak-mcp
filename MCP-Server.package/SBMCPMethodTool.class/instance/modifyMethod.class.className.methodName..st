@@ -1,6 +1,6 @@
 private
 modifyMethod: arguments class: theClass className: className methodName: methodName
-	| oldString newString replaceAll existingSource occurrences newSource category oldAuthor error 	existingCategory |
+	| oldString newString replaceAll existingSource occurrences newSource category error 	existingCategory |
 
 	oldString := self from: arguments get: 'old_string' ifAbsent: ''.
 	newString := self from: arguments get: 'new_string' ifAbsent: nil.
@@ -38,13 +38,10 @@ modifyMethod: arguments class: theClass className: className methodName: methodN
 		existingCategory := theClass organization categoryOfElement: methodName asSymbol.
 		category := existingCategory ifNil: ['as yet unclassified']].
 
-	oldAuthor := Utilities authorInitials.
 	error := nil.
-	[
-		Utilities authorInitials: 'MCPServer'.
+	self withMCPAuthorInitials: [
 		[theClass compile: newSource withSqueakLineEndings classified: category]
-		on: Error do: [:ex | error := ex messageText]
-	] ensure: [Utilities authorInitials: oldAuthor].
+			on: Error do: [:ex | error := ex messageText]].
 	
 	error ifNotNil: [^ self errorResult: error].
 

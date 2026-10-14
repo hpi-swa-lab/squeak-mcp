@@ -1,3 +1,3 @@
 private
 shouldLogForCurrentAuthor
-	^ Utilities authorInitials ~= 'MCPServer'
+	^ (Utilities authorInitials beginsWith: SBMCPTool mcpAuthorInitials) not

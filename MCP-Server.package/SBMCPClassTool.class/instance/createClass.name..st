@@ -1,6 +1,6 @@
 private
 createClass: arguments name: name
-	| comment superclassName instVars classVars poolDicts category superclass newClass 	oldAuthor |
+	| comment superclassName instVars classVars poolDicts category superclass newClass |
 	comment := self from: arguments get: 'comment' ifAbsent: ''.
 	superclassName := self from: arguments get: 'superclass' ifAbsent: 'Object'.
 	instVars := self from: arguments get: 'instanceVariableNames' ifAbsent: ''.
@@ -17,17 +17,14 @@ createClass: arguments name: name
 	superclass := Smalltalk classNamed: superclassName.
 	superclass ifNil: [^ self errorResult: 'Superclass ', superclassName, ' not found'].
 
-	oldAuthor := Utilities authorInitials.
-	[
-		Utilities authorInitials: 'MCPServer'.
+	self withMCPAuthorInitials: [
 		newClass := superclass
 			subclass: name asSymbol
 			instanceVariableNames: instVars
 			classVariableNames: classVars
 			poolDictionaries: poolDicts
 			category: category.
-			newClass classComment: comment.
-	] ensure: [Utilities authorInitials: oldAuthor].
+		newClass classComment: comment].
 
 	^ self successResult: (Dictionary new
 			at: 'action' put: 'created';
