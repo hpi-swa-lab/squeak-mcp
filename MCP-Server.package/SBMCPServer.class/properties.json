@@ -1,7 +1,7 @@
 {
 	"category" : "MCP-Server",
 	"classinstvars" : [
-		 ],
+		"shared" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
