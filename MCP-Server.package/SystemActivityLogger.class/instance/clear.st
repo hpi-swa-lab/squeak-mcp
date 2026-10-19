@@ -1,3 +1,3 @@
 actions
 clear
-	log := OrderedCollection new
+	log := OrderedCollection new.
