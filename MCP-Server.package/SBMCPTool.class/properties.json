@@ -3,7 +3,9 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"ActiveAuthorships",
+		"AuthorLock",
+		"UserInitials" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

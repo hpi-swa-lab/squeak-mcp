@@ -3,6 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"ActiveCaptures",
+		"Capture",
+		"CaptureLock",
+		"RealTranscript",
 		"SessionResults" ],
 	"commentStamp" : "",
 	"instvars" : [
