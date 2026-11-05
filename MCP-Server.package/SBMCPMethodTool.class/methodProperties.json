@@ -1,11 +1,14 @@
 {
 	"class" : {
-		"description" : "jpau 7/20/2026 11:51",
-		"inputSchema" : "jpau 7/15/2026 10:49",
+		"description" : "MCPServer (ek) 11/5/2026 17:48",
+		"inputSchema" : "MCPServer (ek) 11/5/2026 17:48",
 		"toolName" : "jpau 3/28/2026 10:33" },
 	"instance" : {
 		"addMethod:class:className:" : "MCPServer (ek) 11/5/2026 13:39",
 		"classFor:" : "jpau 3/28/2026 10:23",
 		"deleteMethod:className:methodName:" : "MCPServer (leo) 10/14/2026 11:33",
-		"execute:" : "jpau 3/28/2026 10:21",
-		"modifyMethod:class:className:methodName:" : "MCPServer (ek) 11/5/2026 13:39" } }
+		"execute:" : "MCPServer (ek) 11/5/2026 17:48",
+		"listVersions:className:methodName:" : "MCPServer (ek) 11/5/2026 17:48",
+		"modifyMethod:class:className:methodName:" : "MCPServer (ek) 11/5/2026 13:39",
+		"revertMethod:class:className:methodName:" : "MCPServer (ek) 11/5/2026 17:48",
+		"versionsOf:selector:" : "MCPServer (ek) 11/5/2026 17:48" } }

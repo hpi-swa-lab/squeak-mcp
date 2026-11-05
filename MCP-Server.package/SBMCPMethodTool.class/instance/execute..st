@@ -16,4 +16,7 @@ execute: arguments
 	action = 'modify' ifTrue: [^ self modifyMethod: arguments class: theClass className: 		className methodName: methodName].
 	action = 'delete' ifTrue: [^ self deleteMethod: theClass className: className methodName: 		methodName].
 
-	^ self errorResult: 'Invalid action: ', action, '. Use add, modify, or delete.'
+	action = 'versions' ifTrue: [^ self listVersions: theClass className: className methodName: methodName].
+	action = 'revert' ifTrue: [^ self revertMethod: arguments class: theClass className: className methodName: methodName].
+
+	^ self errorResult: 'Invalid action: ', action, '. Use add, modify, delete, versions, or revert.'

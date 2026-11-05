@@ -4,8 +4,8 @@ inputSchema
 	properties := Dictionary new
 		at: 'action' put: (Dictionary new
 			at: 'type' put: 'string';
-			at: 'description' put: 'Operation to perform: add, modify, or delete';
-			at: 'enum' put: #('add' 'modify' 'delete');
+			at: 'description' put: 'Operation to perform: add, modify, delete, versions (list the stored versions, newest first; 1 is the current one), or revert (compile an earlier version again, with its original author stamp and category)';
+			at: 'enum' put: #('add' 'modify' 'delete' 'versions' 'revert');
 			yourself);
 		at: 'class' put: (Dictionary new
 			at: 'type' put: 'string';
@@ -30,6 +30,10 @@ inputSchema
 		at: 'replace_all' put: (Dictionary new
 			at: 'type' put: 'boolean';
 			at: 'description' put: 'Replace all occurrences (default: false, errors if multiple matches)';
+			yourself);
+		at: 'version' put: (Dictionary new
+			at: 'type' put: 'integer';
+			at: 'description' put: 'For revert: the number of the version, as listed by versions';
 			yourself);
 		at: 'category' put: (Dictionary new
 			at: 'type' put: 'string';
