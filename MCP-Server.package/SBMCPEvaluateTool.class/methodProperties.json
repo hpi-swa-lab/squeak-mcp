@@ -1,12 +1,16 @@
 {
 	"class" : {
+		"beginCapture" : "MCPServer (ek) 11/5/2026 11:48",
+		"captureLock" : "MCPServer (ek) 11/5/2026 11:48",
 		"clearSessionResults" : "MCPServer (ek) 11/5/2026 11:42",
 		"description" : "jpau 3/24/2026 14:50",
+		"endCapture" : "MCPServer (ek) 11/5/2026 11:48",
 		"generateVariableName" : "jpau 3/24/2026 14:51",
 		"initialize" : "MCPServer (ek) 11/5/2026 11:42",
 		"inputSchema" : "jpau 3/24/2026 14:50",
+		"realTranscriptFrom:" : "MCPServer (ek) 11/5/2026 11:48",
 		"sessionResults" : "jpau 3/24/2026 14:52",
 		"shutDown:" : "MCPServer (ek) 11/5/2026 11:42",
 		"toolName" : "jpau 3/24/2026 14:51" },
 	"instance" : {
-		"execute:" : "MCPServer (leo) 10/14/2026 11:33" } }
+		"execute:" : "MCPServer (ek) 11/5/2026 11:48" } }

@@ -1,24 +1,20 @@
 executing
 execute: arguments
-	| expression result varName oldTranscript capturingTranscript error log |
-	expression := self from: arguments get: 'expression' ifAbsent: ''.
+	| expression result varName capture start error log |
+	expression := self from: arguments get: 'expression' ifAbsent: [''].
 	expression isEmpty ifTrue: [^ self errorResult: 'expression parameter is required'].
 
-	oldTranscript := Smalltalk at: #Transcript.
-
-	capturingTranscript := CapturingTranscript new.
-	capturingTranscript originalTranscript: oldTranscript.
+	capture := self class beginCapture.
+	start := capture position.
 	error := nil.
-	[
-		Smalltalk at: #Transcript put: capturingTranscript.
-		self withMCPAuthorInitials: [
-			[result := Compiler evaluate: expression]
-				on: Error do: [:ex |
-					error := ex class name asString, ': ',
-						(ex messageText ifEmpty: [ex description])]]
-		] ensure: [Smalltalk at: #Transcript put: oldTranscript].
+	[self withMCPAuthorInitials: [
+		[result := Compiler evaluate: expression]
+			on: Error do: [:ex |
+				error := ex class name asString, ': ',
+					(ex messageText ifEmpty: [ex description])]].
+	log := capture contentsFrom: start]
+		ensure: [self class endCapture].
 
-	log := capturingTranscript contents.
 	error ifNotNil: [
 		^ self addSystemChangesTo: (Dictionary new
 			at: 'success' put: false;
