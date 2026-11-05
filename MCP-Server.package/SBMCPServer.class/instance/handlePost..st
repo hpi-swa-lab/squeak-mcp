@@ -1,7 +1,7 @@
 http-handling
 handlePost: request
 	| json method id params |
-	json := Json readFrom: request getContent readStream.
+	json := Json readFrom: (self contentOf: request) readStream.
 	method := json at: 'method' ifAbsent: [''].
 	id := json at: 'id' ifAbsent: [nil].
 	params := json at: 'params' ifAbsent: [Dictionary new].
