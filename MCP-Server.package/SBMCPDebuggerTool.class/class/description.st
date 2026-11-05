@@ -1,0 +1,3 @@
+accessing
+description
+	^ 'Work with the debuggers open in the user''s Squeak world, visibly for the user. Actions: list (open debuggers), stack (frames, and details of the selected or given frame: source with the current statement in «», self, arguments, temporaries), evaluate (expression in a frame, with access to its temporaries), select (show a frame to the user), stepOver, stepInto, stepThrough, restart (a frame), accept (new source for a frame''s method, then continue from it), create (for doesNotUnderstand: create the missing method as a stub on top of the stack), proceed, abandon. Frames are numbered from 1 (top) as in the debugger''s list. Actions answer the new state. Only proceed or abandon when the user wants that.'

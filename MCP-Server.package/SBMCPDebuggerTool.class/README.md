@@ -1,0 +1,3 @@
+I work with the debuggers open in the user's world, so that the user sees everything I do and we can debug together: read the stack and the variables of a frame, evaluate in a frame, select a frame to show the user where to look, step, restart, edit a method and continue, create a missing method, proceed or abandon.
+
+Actions on a debugger run in the UI process, exactly as if the user had clicked the button. Evaluating in a frame runs like an evaluate: in a process of its own, with a time limit.

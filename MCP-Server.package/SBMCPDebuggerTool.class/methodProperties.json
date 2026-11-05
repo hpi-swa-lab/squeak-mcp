@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"actions" : "MCPServer (ek) 11/5/2026 13:51",
+		"description" : "MCPServer (ek) 11/5/2026 13:51",
+		"inputSchema" : "MCPServer (ek) 11/5/2026 13:51",
+		"maxFrames" : "MCPServer (ek) 11/5/2026 13:51",
+		"toolName" : "MCPServer (ek) 11/5/2026 13:51",
+		"uiTimeoutSeconds" : "MCPServer (ek) 11/5/2026 13:51" },
+	"instance" : {
+		"act:on:frame:arguments:" : "MCPServer (ek) 11/5/2026 13:53",
+		"classForCreateFrom:in:" : "MCPServer (ek) 11/5/2026 13:52",
+		"contextAt:of:" : "MCPServer (ek) 11/5/2026 13:52",
+		"contextsOf:" : "MCPServer (ek) 11/5/2026 13:52",
+		"debuggerList" : "MCPServer (ek) 11/5/2026 13:52",
+		"debuggerWindowFrom:" : "MCPServer (ek) 11/5/2026 13:52",
+		"debuggerWindows" : "MCPServer (ek) 11/5/2026 13:52",
+		"detailsOf:number:" : "MCPServer (ek) 11/5/2026 13:52",
+		"evaluate:in:" : "MCPServer (ek) 11/5/2026 13:52",
+		"execute:" : "MCPServer (ek) 11/5/2026 13:52",
+		"idOf:" : "MCPServer (ek) 11/5/2026 13:52",
+		"markedSourceOf:isTop:" : "MCPServer (ek) 11/5/2026 13:52",
+		"select:in:" : "MCPServer (ek) 11/5/2026 13:52",
+		"stateOf:frame:" : "MCPServer (ek) 11/5/2026 13:52" } }
