@@ -4,6 +4,7 @@
 	"instance" : {
 		"contents" : "jpau 3/24/2026 14:56",
 		"cr" : "jpau 3/24/2026 15:12",
+		"crtab" : "MCPServer (ek) 11/5/2026 11:39",
 		"doesNotUnderstand:" : "MCPServer 7/20/2026 17:48",
 		"endEntry" : "7/20/2026 15:44:06",
 		"flush" : "7/20/2026 15:44:06",
@@ -13,7 +14,8 @@
 		"nl" : "7/20/2026 15:44:06",
 		"originalTranscript" : "7/20/2026 15:44:06",
 		"originalTranscript:" : "jpau 3/24/2026 15:11",
+		"print:" : "MCPServer (ek) 11/5/2026 11:39",
 		"show:" : "jpau 3/24/2026 15:11",
-		"showln:" : "7/20/2026 15:44:06",
+		"showln:" : "MCPServer (ek) 11/5/2026 11:39",
 		"space" : "7/20/2026 15:44:06",
 		"tab" : "7/20/2026 15:44:06" } }
