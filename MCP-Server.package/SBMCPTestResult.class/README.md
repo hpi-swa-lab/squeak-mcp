@@ -1,0 +1,1 @@
+I am a TestResult for the run_tests tool. Like TestResult, I record passes, failures and errors, but I also keep the message and stack of each failure and error: they are written while the failing test's frames still exist (before tearDown), as they are gone afterwards. I also know the test that is running, so that a run that times out can say where it was.

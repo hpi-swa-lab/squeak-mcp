@@ -1,0 +1,16 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"tool",
+		"defectReports",
+		"currentCase" ],
+	"name" : "SBMCPTestResult",
+	"pools" : [
+		 ],
+	"super" : "TestResult",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"defaultTimeout" : "MCPServer (ek) 11/5/2026 13:13",
+		"description" : "MCPServer (ek) 11/5/2026 13:13",
+		"inputSchema" : "MCPServer (ek) 11/5/2026 13:13",
+		"maxDetailedDefects" : "MCPServer (ek) 11/5/2026 13:13",
+		"maxLogSize" : "MCPServer (ek) 11/5/2026 13:13",
+		"toolName" : "MCPServer (ek) 11/5/2026 13:13" },
+	"instance" : {
+		"defectReportsOf:in:" : "MCPServer (ek) 11/5/2026 13:14",
+		"execute:" : "MCPServer (ek) 11/5/2026 13:14",
+		"report:of:milliseconds:timeout:log:" : "MCPServer (ek) 11/5/2026 13:14",
+		"run:seconds:" : "MCPServer (ek) 11/5/2026 13:14",
+		"testsNamed:" : "MCPServer (ek) 11/5/2026 13:14",
+		"timeoutReportOf:in:after:" : "MCPServer (ek) 11/5/2026 13:14" } }

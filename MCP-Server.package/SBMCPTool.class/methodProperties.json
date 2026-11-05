@@ -8,6 +8,8 @@
 		"initialize" : "MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (ek)))))))))))) 11/5/2026 11:34",
 		"inputSchema" : "japu 3/24/2026 11:33",
 		"isAbstract" : "MCPServer 7/28/2026 18:47",
+		"maxStackFrames" : "MCPServer (ek) 11/5/2026 13:12",
+		"maxValueSize" : "MCPServer (ek) 11/5/2026 13:12",
 		"mcpAuthorInitials" : "MCPServer (leo) 10/14/2026 11:38",
 		"mcpAuthorInitialsFor:" : "MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (ek)))))))))))) 11/5/2026 11:34",
 		"parameterNamed:type:description:" : "japu 3/24/2026 11:36",
@@ -16,10 +18,14 @@
 	"instance" : {
 		"addSystemChangesTo:" : "MCPServer 3/28/2026 11:34",
 		"contentFor:" : "MCPServer (ek) 11/5/2026 13:06",
+		"errorMessageOf:" : "MCPServer (ek) 11/5/2026 13:12",
 		"errorResult:" : "MCPServer 3/28/2026 11:33",
 		"execute:" : "jpau 3/28/2026 11:36",
 		"from:get:ifAbsent:" : "japu 3/24/2026 13:25",
 		"getAndClearSystemActivities" : "MCPServer 4/14/2026 14:50",
 		"prefixForActivityType:" : "MCPServer 3/28/2026 11:32",
+		"printFrame:on:" : "MCPServer (ek) 11/5/2026 13:12",
+		"printValue:" : "MCPServer (ek) 11/5/2026 13:12",
+		"stackFrom:upTo:" : "MCPServer (ek) 11/5/2026 13:12",
 		"successResult:" : "MCPServer 3/28/2026 11:32",
 		"withMCPAuthorInitials:" : "MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (ek)))))))))))) 11/5/2026 11:34" } }

@@ -1,4 +1,4 @@
-private
+error reporting
 printValue: aBlock
 	"Values in a broken state may fail to print; that must not hide the trace."
 	^ [aBlock value printStringLimitedTo: self class maxValueSize]

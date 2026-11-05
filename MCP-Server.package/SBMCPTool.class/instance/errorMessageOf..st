@@ -1,4 +1,4 @@
-private
+error reporting
 errorMessageOf: anException
 	"Some exceptions fail to build their messageText (e.g. SyntaxErrorNotification without a cue); an error in a handler would escape it."
 	| text |

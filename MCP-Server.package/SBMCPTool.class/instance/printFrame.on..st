@@ -1,4 +1,4 @@
-private
+error reporting
 printFrame: aContext on: aStream
 	aStream nextPutAll: aContext printString; cr.
 	aStream tab; nextPutAll: 'self: '; nextPutAll: (self printValue: [aContext receiver]); cr.
