@@ -10,13 +10,14 @@
 		"initialize" : "MCPServer (ek) 11/5/2026 11:42",
 		"inputSchema" : "MCPServer (ek) 11/5/2026 13:31",
 		"realTranscriptFrom:" : "MCPServer (ek) 11/5/2026 11:48",
+		"remember:" : "MCPServer (ek) 11/5/2026 13:43",
 		"sessionResults" : "jpau 3/24/2026 14:52",
 		"shutDown:" : "MCPServer (ek) 11/5/2026 11:42",
 		"toolName" : "jpau 3/24/2026 14:51" },
 	"instance" : {
 		"evaluate:" : "MCPServer (ek) 11/5/2026 12:48",
-		"execute:" : "MCPServer (ek) 11/5/2026 13:32",
+		"execute:" : "MCPServer (ek) 11/5/2026 13:43",
 		"run:" : "MCPServer (ek) 11/5/2026 13:31",
-		"run:seconds:" : "MCPServer (ek) 11/5/2026 13:31",
-		"stackToDoItFrom:" : "MCPServer (ek) 11/5/2026 13:31",
-		"stackTraceOf:" : "MCPServer (ek) 11/5/2026 13:31" } }
+		"run:seconds:" : "MCPServer (ek) 11/5/2026 13:42",
+		"runBlock:seconds:" : "MCPServer (ek) 11/5/2026 13:42",
+		"stackFrom:within:" : "MCPServer (ek) 11/5/2026 13:42" } }

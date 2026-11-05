@@ -1,0 +1,3 @@
+I show an object's fields the way Squeak's inspectors do (instance variables, collection elements, dictionary keys, a morph's extra fields), and can follow a path of field names from it.
+
+The object is the result of an expression, or of an earlier evaluate (its variable). Field values are computed and printed by the object's own code, so I do that like an evaluate: in a process of its own, with a time limit and error traces.

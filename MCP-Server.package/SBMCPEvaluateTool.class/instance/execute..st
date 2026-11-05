@@ -8,8 +8,7 @@ execute: arguments
 	(outcome at: 'success') ifFalse: [^ self addSystemChangesTo: outcome].
 
 	result := outcome removeKey: #value.
-	varName := self class generateVariableName.
-	self class sessionResults at: varName put: result.
+	varName := self class remember: result.
 	outcome at: 'result' put: (Dictionary new
 		at: 'value' put: result printString;
 		at: 'class' put: result class name;
