@@ -5,8 +5,7 @@ runBlock: aBlock seconds: timeout
 	capture := self class beginCapture.
 	start := capture position.
 	done := Semaphore new.
-	[self withMCPAuthorInitials: [
-		"Below the request process's priority: processes of equal priority do not preempt each other, so a busy evaluation would never let the request process stop it."
+	[self withMCPAuthorInitials: [self aboveEvaluationsDo: [
 		process := [
 			[[result := aBlock value]
 				on: Error, Halt, Warning do: [:ex |
@@ -16,13 +15,13 @@ runBlock: aBlock seconds: timeout
 					error := self errorMessageOf: ex.
 					stack := self stackFrom: ex signalerContext within: aBlock]]
 				ensure: [done signal]]
-			forkAt: Processor activeProcess priority - 1.
+			forkAt: self class evaluationPriority.
 		(done waitTimeoutSeconds: timeout) ifTrue: [
 			log := capture contentsFrom: start.
 			error := 'Timeout: stopped after ', timeout printString, ' seconds'.
 			stack := self stackFrom: process suspendedContext within: aBlock.
 			process terminate].
-		log ifNil: [log := capture contentsFrom: start]]]
+		log ifNil: [log := capture contentsFrom: start]]]]
 		ensure: [self class endCapture].
 
 	outcome := Dictionary new
