@@ -9,6 +9,10 @@ execute: arguments
 		^ self errorResult: 'kind must be one of ', (self class kinds inject: '' into: [:all :each | all isEmpty ifTrue: [each] ifFalse: [all, ', ', each]])].
 	query isEmpty ifTrue: [^ self errorResult: 'query parameter is required'].
 
+	kind = 'dependencies' ifTrue: [
+		^ (self categoriesMatching: query)
+			ifEmpty: [self errorResult: 'No class category named ', query, ' or starting with ', query, '-']
+			ifNotEmpty: [:categories | self successResult: (self dependenciesOf: categories scope: scope limit: limit)]].
 	kind = 'selectors' ifTrue: [
 		^ self successResult: (self selectorsContaining: query scope: scope limit: limit)].
 	methods := self methodsFor: kind query: query arguments: arguments.

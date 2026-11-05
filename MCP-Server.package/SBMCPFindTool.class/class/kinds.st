@@ -1,3 +1,3 @@
 accessing
 kinds
-	^ #('senders' 'implementors' 'references' 'instVarReferences' 'source' 'selectors')
+	^ #('senders' 'implementors' 'references' 'instVarReferences' 'source' 'selectors' 'dependencies')

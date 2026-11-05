@@ -6,7 +6,7 @@ inputSchema
 			at: 'kind' put: ((self
 				parameterNamed: 'kind'
 				type: 'string'
-				description: 'senders, implementors (query: a selector), references (query: a class or global name), instVarReferences (query: an instance variable name, class: the class defining it; subclasses are included), source (query: text, case-insensitive), selectors (query: part of a selector)')
+				description: 'senders, implementors (query: a selector), references (query: a class or global name), instVarReferences (query: an instance variable name, class: the class defining it; subclasses are included), source (query: text, case-insensitive), selectors (query: part of a selector), dependencies (query: a class category or prefix such as "Presenter-Core" or "Presenter"; answers which other categories its classes and extension methods need: method references, also in blocks, superclasses and extended classes; scope keeps only target categories starting with it)')
 					at: 'enum' put: self kinds;
 					yourself);
 			at: 'query' put: (self

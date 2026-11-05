@@ -1,18 +1,26 @@
 {
 	"class" : {
 		"defaultLimit" : "MCPServer (ek) 11/5/2026 13:37",
-		"description" : "MCPServer (ek) 11/5/2026 13:37",
-		"inputSchema" : "MCPServer (ek) 11/5/2026 13:37",
-		"kinds" : "MCPServer (ek) 11/5/2026 13:37",
+		"description" : "MCPServer (ek) 11/5/2026 17:36",
+		"inputSchema" : "MCPServer (ek) 11/5/2026 17:36",
+		"kinds" : "MCPServer (ek) 11/5/2026 17:36",
+		"maxDependencyExamples" : "MCPServer (ek) 11/5/2026 17:37",
 		"maxLineSize" : "MCPServer (ek) 11/5/2026 13:38",
 		"toolName" : "MCPServer (ek) 11/5/2026 13:37" },
 	"instance" : {
+		"categoriesMatching:" : "MCPServer (ek) 11/5/2026 17:37",
+		"category:ownsExtension:" : "MCPServer (ek) 11/5/2026 17:37",
+		"dependenciesOf:scope:limit:" : "MCPServer (ek) 11/5/2026 17:37",
+		"dependencyFrom:to:in:" : "MCPServer (ek) 11/5/2026 17:37",
 		"describe:kind:query:" : "MCPServer (ek) 11/5/2026 14:08",
-		"execute:" : "MCPServer (ek) 11/5/2026 13:38",
+		"execute:" : "MCPServer (ek) 11/5/2026 17:36",
+		"isCategory:inScope:" : "MCPServer (ek) 11/5/2026 17:37",
 		"isClassComment:" : "MCPServer (ek) 11/5/2026 14:08",
 		"isMethod:inScope:" : "MCPServer (ek) 11/5/2026 13:38",
 		"lineOf:matching:skipPattern:" : "MCPServer (ek) 11/5/2026 13:38",
 		"methodsFor:query:arguments:" : "MCPServer (ek) 11/5/2026 13:38",
+		"methodsOf:do:" : "MCPServer (ek) 11/5/2026 17:37",
 		"nameOf:" : "MCPServer (ek) 11/5/2026 13:38",
 		"needlesFor:query:" : "MCPServer (ek) 11/5/2026 13:38",
-		"selectorsContaining:scope:limit:" : "MCPServer (ek) 11/5/2026 13:38" } }
+		"selectorsContaining:scope:limit:" : "MCPServer (ek) 11/5/2026 13:38",
+		"weightOf:" : "MCPServer (ek) 11/5/2026 17:37" } }
