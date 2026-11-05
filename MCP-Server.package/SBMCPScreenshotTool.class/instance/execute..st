@@ -26,5 +26,5 @@ execute: arguments
 		at: 'capturedHeight' put: captured y;
 		at: 'width' put: form width;
 		at: 'height' put: form height;
-		at: 'scale' put: (form width / captured x roundTo: 0.001) asFloat;
+		at: 'scale' put: (form width * 1000 / captured x) rounded / 1000.0;
 		yourself)
