@@ -1,4 +1,4 @@
-private
+error reporting
 syntaxErrorMessage: aSyntaxError in: expression
 	"Mark the error in the source like a Squeak editor does. SyntaxErrorNotification>>messageText cannot be used: it needs a cue, which Compiler evaluate: does not set."
 	| position |

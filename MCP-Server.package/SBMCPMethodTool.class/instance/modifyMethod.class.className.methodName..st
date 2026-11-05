@@ -41,7 +41,8 @@ modifyMethod: arguments class: theClass className: className methodName: methodN
 	error := nil.
 	self withMCPAuthorInitials: [
 		[theClass compile: newSource withSqueakLineEndings classified: category]
-			on: Error do: [:ex | error := ex messageText]].
+			on: SyntaxErrorNotification do: [:ex | error := self syntaxErrorMessage: ex in: newSource withSqueakLineEndings]
+			on: Error do: [:ex | error := self errorMessageOf: ex]].
 	
 	error ifNotNil: [^ self errorResult: error].
 

@@ -1,0 +1,1 @@
+I search the image the way the browsers' senders, implementors and references commands do, and answer compact results: for each method its class, selector and category, and where it helps the first source line that matches.

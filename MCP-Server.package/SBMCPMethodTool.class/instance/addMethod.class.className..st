@@ -13,7 +13,8 @@ addMethod: arguments class: theClass className: className
 	error := nil.
 	self withMCPAuthorInitials: [
 		[theClass compile: source withSqueakLineEndings classified: category]
-			on: Error do: [:ex | error := ex messageText]].
+			on: SyntaxErrorNotification do: [:ex | error := self syntaxErrorMessage: ex in: source withSqueakLineEndings]
+			on: Error do: [:ex | error := self errorMessageOf: ex]].
 
 	error ifNotNil: [^ self errorResult: error].
 	

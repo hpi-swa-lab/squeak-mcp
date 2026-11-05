@@ -23,10 +23,11 @@
 		"execute:" : "jpau 3/28/2026 11:36",
 		"from:get:ifAbsent:" : "japu 3/24/2026 13:25",
 		"getAndClearSystemActivities" : "MCPServer 4/14/2026 14:50",
-		"integerFrom:get:ifAbsent:" : "MCPServer (ek) 11/5/2026 13:32",
+		"integerFrom:get:ifAbsent:" : "MCPServer (ek) 11/5/2026 13:37",
 		"prefixForActivityType:" : "MCPServer 3/28/2026 11:32",
 		"printFrame:on:" : "MCPServer (ek) 11/5/2026 13:12",
 		"printValue:" : "MCPServer (ek) 11/5/2026 13:12",
 		"stackFrom:upTo:" : "MCPServer (ek) 11/5/2026 13:12",
 		"successResult:" : "MCPServer 3/28/2026 11:32",
+		"syntaxErrorMessage:in:" : "MCPServer (ek) 11/5/2026 13:38",
 		"withMCPAuthorInitials:" : "MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (MCPServer (ek)))))))))))) 11/5/2026 11:34" } }
