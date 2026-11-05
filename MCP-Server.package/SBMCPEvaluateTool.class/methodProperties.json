@@ -17,8 +17,9 @@
 	"instance" : {
 		"errorMessageOf:" : "MCPServer (ek) 11/5/2026 12:47",
 		"evaluate:" : "MCPServer (ek) 11/5/2026 12:48",
-		"execute:" : "MCPServer (ek) 11/5/2026 12:49",
+		"execute:" : "MCPServer (ek) 11/5/2026 13:06",
 		"printFrame:on:" : "MCPServer (ek) 11/5/2026 12:47",
 		"printValue:" : "MCPServer (ek) 11/5/2026 12:47",
+		"run:" : "MCPServer (ek) 11/5/2026 13:06",
 		"stackTraceOf:" : "MCPServer (ek) 11/5/2026 12:47",
 		"syntaxErrorMessage:in:" : "MCPServer (ek) 11/5/2026 11:55" } }

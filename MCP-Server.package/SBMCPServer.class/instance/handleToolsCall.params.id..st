@@ -14,4 +14,4 @@ handleToolsCall: request params: params id: id
 	[MCPToolLogger current logTool: toolName arguments: arguments result: result]
 		on: Error do: [:ex | "ignore logging errors"].
 
-	^ self sendToolResult: request result: result id: id
+	^ self sendToolResult: request content: (tool contentFor: result) id: id

@@ -1,0 +1,14 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"png" ],
+	"name" : "SBMCPScreenshotTool",
+	"pools" : [
+		 ],
+	"super" : "SBMCPTool",
+	"type" : "normal" }
