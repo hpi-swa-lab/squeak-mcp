@@ -1,0 +1,3 @@
+accessing
+description
+	^ 'Find out what keeps an object alive: the shortest path of references from Smalltalk to it (like Squeak''s PointerFinder) and its direct referrers. The object is the result of an expression; it is not cached or kept by this tool, so the answer shows the image as it is (references held by other tools, e.g. the evaluate result cache, appear like any other). Searches the whole image, which takes seconds.'

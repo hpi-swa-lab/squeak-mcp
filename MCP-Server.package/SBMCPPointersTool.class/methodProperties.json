@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"defaultMaxReferrers" : "MCPServer (ek) 11/5/2026 16:41",
+		"defaultTimeout" : "MCPServer (ek) 11/5/2026 16:41",
+		"description" : "MCPServer (ek) 11/5/2026 16:41",
+		"inputSchema" : "MCPServer (ek) 11/5/2026 16:41",
+		"toolName" : "MCPServer (ek) 11/5/2026 16:41" },
+	"instance" : {
+		"execute:" : "MCPServer (ek) 11/5/2026 16:41",
+		"pointersOf:with:maxReferrers:ifSyntaxError:" : "MCPServer (ek) 11/5/2026 16:41" } }

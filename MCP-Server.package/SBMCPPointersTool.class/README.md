@@ -1,0 +1,3 @@
+I find out what keeps an object alive: the shortest path of references from Smalltalk to it (as Squeak's PointerFinder shows it) and its direct referrers.
+
+The object is the result of an expression, evaluated in the process that also searches. It is only held by that process's frame: the frames of a running process cannot be reached from Smalltalk, and Object>>inboundPointersExcluding: leaves out its caller's frame. I answer only strings and cache nothing, so after the search no tool keeps the object; other tools' references (e.g. the evaluate result cache) are found like any other.

@@ -1,0 +1,14 @@
+{
+	"category" : "MCP-Server",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "SBMCPPointersTool",
+	"pools" : [
+		 ],
+	"super" : "SBMCPTool",
+	"type" : "normal" }
