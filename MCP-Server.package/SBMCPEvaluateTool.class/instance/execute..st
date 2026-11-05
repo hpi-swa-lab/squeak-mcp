@@ -1,6 +1,6 @@
 executing
 execute: arguments
-	| expression result varName capture start error log |
+	| expression result varName capture start error stack log |
 	expression := self from: arguments get: 'expression' ifAbsent: [''].
 	expression isEmpty ifTrue: [^ self errorResult: 'expression parameter is required'].
 
@@ -8,19 +8,23 @@ execute: arguments
 	start := capture position.
 	error := nil.
 	[self withMCPAuthorInitials: [
-		[[result := Compiler evaluate: expression]
+		[[result := self evaluate: expression]
 			on: SyntaxErrorNotification do: [:ex |
 				error := self syntaxErrorMessage: ex in: expression]]
-			on: Error do: [:ex |
-				error := ex class name asString, ': ',
-					(ex messageText ifEmpty: [ex description])]].
-	log := capture contentsFrom: start]
+			on: Error, Halt, Warning do: [:ex |
+				"Unhandled, these would open a debugger in the request process, which then never answers."
+				"Take the log first: building the trace parses the expression again, which repeats compiler warnings."
+				log := capture contentsFrom: start.
+				error := self errorMessageOf: ex.
+				stack := self stackTraceOf: ex]].
+	log ifNil: [log := capture contentsFrom: start]]
 		ensure: [self class endCapture].
 
 	error ifNotNil: [
 		^ self addSystemChangesTo: (Dictionary new
 			at: 'success' put: false;
 			at: 'error' put: error;
+			at: 'stack' put: stack;
 			at: 'log' put: log;
 			yourself)].
 	
