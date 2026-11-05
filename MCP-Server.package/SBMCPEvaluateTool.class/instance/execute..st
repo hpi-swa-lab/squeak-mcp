@@ -8,7 +8,9 @@ execute: arguments
 	start := capture position.
 	error := nil.
 	[self withMCPAuthorInitials: [
-		[result := Compiler evaluate: expression]
+		[[result := Compiler evaluate: expression]
+			on: SyntaxErrorNotification do: [:ex |
+				error := self syntaxErrorMessage: ex in: expression]]
 			on: Error do: [:ex |
 				error := ex class name asString, ': ',
 					(ex messageText ifEmpty: [ex description])]].
