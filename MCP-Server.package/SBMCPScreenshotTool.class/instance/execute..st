@@ -2,7 +2,7 @@ executing
 execute: arguments
 	| expression maxSize morph form captured info |
 	expression := self from: arguments get: 'morph' ifAbsent: [nil].
-	maxSize := self from: arguments get: 'maxSize' ifAbsent: [self class defaultMaxSize].
+	maxSize := self integerFrom: arguments get: 'maxSize' ifAbsent: [self class defaultMaxSize].
 	info := Dictionary new.
 	(expression isNil or: [expression isEmpty])
 		ifTrue: [

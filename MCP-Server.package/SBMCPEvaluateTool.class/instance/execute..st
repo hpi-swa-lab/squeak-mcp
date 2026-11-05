@@ -4,7 +4,7 @@ execute: arguments
 	expression := self from: arguments get: 'expression' ifAbsent: [''].
 	expression isEmpty ifTrue: [^ self errorResult: 'expression parameter is required'].
 
-	outcome := self run: expression.
+	outcome := self run: expression seconds: (self integerFrom: arguments get: 'timeout' ifAbsent: [self class defaultTimeout]).
 	(outcome at: 'success') ifFalse: [^ self addSystemChangesTo: outcome].
 
 	result := outcome removeKey: #value.

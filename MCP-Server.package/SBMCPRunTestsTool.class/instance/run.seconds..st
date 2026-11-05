@@ -9,7 +9,7 @@ run: aTestSuite seconds: timeout
 	[self withMCPAuthorInitials: [
 		startTime := Time millisecondClockValue.
 		process := [[aTestSuite run: result] ensure: [done signal]]
-			forkAt: Processor userBackgroundPriority.
+			forkAt: Processor activeProcess priority - 1. "Below the request process: processes of equal priority do not preempt each other, so a busy test would never let the request process stop the run."
 		(done waitTimeoutSeconds: timeout) ifTrue: [
 			timeoutReport := self timeoutReportOf: process in: result after: timeout.
 			process terminate].
