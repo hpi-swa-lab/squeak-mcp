@@ -1,8 +1,5 @@
-executing
+author initials
 withMCPAuthorInitials: aBlock
-	"Evaluate aBlock with author initials set to 'MCPServer (<original initials>)' and restore the original initials afterwards."
-	| oldAuthor |
-	oldAuthor := Utilities authorInitials.
-	^ [Utilities authorInitials: self class mcpAuthorInitials, ' (', oldAuthor, ')'.
-		aBlock value]
-		ensure: [Utilities authorInitials: oldAuthor]
+	"Evaluate aBlock with author initials set to 'MCPServer (<user initials>)' and restore the user's initials when the last overlapping request is done."
+	self class beginMCPAuthorship.
+	^ aBlock ensure: [self class endMCPAuthorship]
