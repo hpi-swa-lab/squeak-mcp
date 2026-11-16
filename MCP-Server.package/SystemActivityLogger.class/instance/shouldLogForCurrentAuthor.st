@@ -1,3 +1,3 @@
 private
 shouldLogForCurrentAuthor
-	^ (Utilities authorInitials beginsWith: SBMCPTool mcpAuthorInitials) not
+	^ (Utilities authorInitials includesSubstring: SBMCPTool mcpAuthorInitials) not

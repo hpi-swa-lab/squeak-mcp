@@ -1,3 +1,3 @@
 author initials
 mcpAuthorInitialsFor: userInitials
-	^ self mcpAuthorInitials, ' (', userInitials, ')'
+	^ userInitials, '-', self mcpAuthorInitials
